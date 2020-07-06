@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #1a1a1a;
+}
+
+a {
+  text-decoration: none;
+  transition: color ease-in-out 150ms;
+}
+
+a:hover {
+  color: #545454;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-left: 20px;
+}
+
+#header {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  align-items: center;
+  box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.26);
+  height: 90px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#header h1 {
+  font-family: 'Pacifico';
+}
+
+#header ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  align-items: center;
+}
+
+nav a {
+  font-size: 90%;
+}
+
+#landing-image {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  height: 60%;
+  background-image: linear-gradient(180deg,
+      rgba(188, 168, 180, 0),
+      rgba(0, 191, 175, 0.466),
+      rgba(0, 76, 191, 0)),
+    url(https://static01.nyt.com/images/2020/03/17/fashion/17virus-masks-1/17virus-masks-1-superJumbo.jpg);
+  background-size: cover;
+  opacity: 0.5;
+  transition: all ease-in-out 200ms;
+}
+
+#landing-image:hover {
+  background-image: url(https://static01.nyt.com/images/2020/03/17/fashion/17virus-masks-1/17virus-masks-1-superJumbo.jpg);
+  opacity: 1;
+}
+
+#landing-text {
+  position: absolute;
+  top: 70%;
+  background: #ffffff;
+  box-shadow: 0px -2px 18px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  height: 30%;
+  transition: all ease-in-out 200ms;
+  display: grid;
+  align-items: center;
+}
+
+#landing-text:hover {
+  top: 40%;
+  height: 60%;
+}
+
+#landing-text h2,
+p {
+  margin: 20px;
+}
+
+#landing-text h2 {
+  font-size: 2.8em;
+  font-weight: 700;
+}
+
+#landing-text p {
+  margin-left: 30%;
+  font-size: 3em;
+}
+
+#landing-text .stylish .text {
+  font-family: 'Pacifico';
+  color: #c6e900;
+  text-decoration: solid #c6e900 underline;
+}
+
+#landing-text .safe {
+  margin-left: calc(30% + 80px);
+}
+
+#landing-text .safe .text {
+  font-weight: 700;
+  font-size: 2em;
+  color: #00f1f1;
+  text-decoration: solid #00f1f1 underline;
+}
+
+.source {
+  position: absolute;
+  bottom: 0%;
+  color: #f1f1f1;
+  font-size: 0.8em;
+  text-align: center;
+  width: 100%;
+}
+
+.about-content {
+  display: grid;
+  grid-template-rows: 0.5vw 0.5vw;
+}
+
+#about-image {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  max-height: calc(100% - 90px);
+  background-image: linear-gradient(90deg,
+      rgba(188, 168, 180, 0),
+      rgba(191, 102, 0, 0.24),
+      rgba(0, 76, 191, 0)),
+    url(https://luxiders.com/wp-content/uploads/2020/03/T_1152.jpg);
+  background-size: cover;
+  opacity: 0.5;
+  transition: all ease-in-out 200ms;
+}
+
+#about-image:hover {
+  background-image: url(https://luxiders.com/wp-content/uploads/2020/03/T_1152.jpg);
+  opacity: 1;
+}
+
+#about-text {
+  position: absolute;
+  top: 90px;
+  bottom: 0;
+  box-shadow: 4px 0 18px rgba(0, 0, 0, 0.25);
+  left: 50%;
+  width: 50%;
+  height: calc(100%-90px);
+  background-color: #ffffff;
+  z-index: 0;
+  transition: all ease-in-out 200ms;
+}
+
+#about-text:hover {
+  position: absolute;
+  top: 90px;
+  bottom: 0;
+  box-shadow: 4px 0 18px rgba(0, 0, 0, 0.25);
+  left: 30%;
+  width: 70%;
+  height: calc(100%-90px);
+  background-color: #ffffff;
+  z-index: 0;
+}
+
+#about-text h2 {
+  margin: 50px;
+  font-size: 1.8em;
+}
+
+#about-text ul {
+  list-style-type: none;
+  margin-left: 20%;
+}
+
+#about-text li {
+  margin: 1em 0;
+}
+
+#contact-text {
+  position: absolute;
+  top: 160px;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 60%;
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+
+#contact-text img {
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: 0px 5px 10px rgb(31, 31, 31);
+  border: solid white 4px;
+}
+
+#contact-text table {
+  margin: 10px 0 0 40%;
+  width: 50%;
+}
+
+#contact-text tr {
+  text-align: left;
+}
+
+.image-set {
+  display: grid;
+  position: absolute;
+  top: 140px;
+  bottom: 0;
+  right: 0;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-row: 100%;
+  align-items: center;
+  justify-items: center;
+}
+
+.image-set .image {
+  width: 20%;
+  height: auto;
+  overflow: hidden;
+  transition: all ease-in-out 200ms;
+  cursor: pointer;
+}
+
+.image-set .image:hover {
+  width: 600px;
+  overflow: visible;
+  z-index: 5;
+}
+
+.image-set img {
+  width: 600px;
+  margin: auto;
+  box-shadow: 0 5px 10px rgb(37, 37, 37);
+  transition: all ease-in-out 200ms;
+  cursor: pointer;
+}
+
+#gallery-text{
+  position: absolute;
+  top: 170px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#gallery-text p{
+  font-size: 0.7em;
+  color: #545454;
+}
